@@ -1,13 +1,13 @@
-package com.villota.eureka;
+package com.villota.usuarios.usuarios;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class UsuariosApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(UsuariosApplication.class, args);
 	}
 
 }
