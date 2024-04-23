@@ -1,4 +1,4 @@
-package com.villota.usuarios.usuarios;
+package com.villota.usuarios;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
