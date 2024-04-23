@@ -1,10 +1,10 @@
-package com.villota.microservicio.eureka;
+package com.villota.eureka;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MicroservicioEurekaApplicationTests {
+class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
