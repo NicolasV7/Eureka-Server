@@ -28,7 +28,17 @@ All commands are run from the root of the project, from a terminal:
 | `Optional` | A container object which may or may not contain a non-null value. It's used to represent nullable return types, so you don't have to check for `null` values. |
 | `@PathVariable` | A Spring annotation which indicates that a method parameter should be bound to a URI template variable. If the method parameter is `Map<String, String>`, then all the path variables are added to the map. |
 
-## Generic Component in Java
+
+## 📚 Spring Cloud Gateway
+
+| Property | Description |
+| --- | --- |
+| `spring.cloud.gateway.mvc.routes[0].id=microservico-usuarios` | This line is setting the ID of the first route (index 0) to `microservico-usuarios`. The ID is used to identify the route. |
+| `spring.cloud.gateway.mvc.routes[0].uri=lb://microservico-usuarios` | This line is setting the URI of the first route to `lb://microservico-usuarios`. The `lb://` prefix indicates that this route will use a load-balanced WebClient. `microservico-usuarios` is the name of the service this route will forward requests to. |
+| `spring.cloud.gateway.mvc.routes[0].predicates=Path=/api/alumnos/**` | This line is setting a predicate for the first route. Predicates determine if a request matches a route. In this case, the route will match any request where the path starts with `/api/alumnos/`. |
+| `spring.cloud.gateway.mvc.routes[0].filters=StripPrefix=2` | This line is setting a filter for the first route. Filters can modify requests and responses before they are sent or after they are received. The `StripPrefix=2` filter will remove the first two segments of the path. For example, if the request path is `/api/alumnos/test`, it will be forwarded as `/test`. |
+
+## 💽 Generic Component in Java
 
 A generic component in Java refers to generic classes, interfaces, and methods. Generics allow types (classes and interfaces) to be parameters when defining classes, interfaces, and methods.
 
