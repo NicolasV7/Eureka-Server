@@ -8,7 +8,7 @@
 		<version>3.2.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.villota</groupId>
+	<groupId>com.villota.commons</groupId>
 	<artifactId>componentGeneric</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>componentGeneric</name>
