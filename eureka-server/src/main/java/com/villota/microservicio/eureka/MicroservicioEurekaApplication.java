@@ -12,6 +12,5 @@ public class MicroservicioEurekaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MicroservicioEurekaApplication.class, args);
 	}
-  system.out.println("Hola mundo");
 
 }
