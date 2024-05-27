@@ -68,6 +68,14 @@ Eureka Server:
 Client Service:
 ![Screenshot](usuarios/src/main/resources/img/0000.png)
 
+## 📚 Spring Cloud Config
+
+| Property | Description |
+| --- | --- |
+| `spring.cloud.config.uri=http://localhost:8888` | This line is setting the URI of the Spring Cloud Config server to `http://localhost:8888`. The Config server is where the client service will get its configuration from. |
+| `spring.cloud.config.name=usuarios` | This line is setting the name of the application to `usuarios`. The Config server will look for a file named `usuarios.properties` in the Git repository. |
+| `spring.cloud.config.profile=dev` | This line is setting the profile of the application to `dev`. The Config server will look for a file named `usuarios-dev.properties` in the Git repository. |
+
 ## 📦 Requirements
 
 | Requirement | Version |
